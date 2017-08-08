@@ -27,8 +27,9 @@ $ ./mvnw test
 ```
 
 ---
-Created by [Atomist][atomist].
+Created by [Ivan Dugalic][idugalic]@[lab][lab].
 Need Help?  [Join our Slack team][slack].
 
-[atomist]: https://www.atomist.com/
-[slack]: https://join.atomist.com/
+[idugalic]: http://idugalic.pro
+[lab]: http://lab.idugalic.pro
+[slack]: https://join.slack.com/t/idugalic/signup
