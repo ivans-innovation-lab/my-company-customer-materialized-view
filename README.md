@@ -1,6 +1,6 @@
 # my-company-customer-materialized-view
 
-This project contains my new project.
+This project contains a materialized view for Customer aggregate.
 
 ## Development
 
