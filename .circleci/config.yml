@@ -1,5 +1,5 @@
 defaults: &defaults
-  working_directory: /home/circleci/my-company-mview
+  working_directory: /home/circleci/my-company-materialized-view
   docker:
     - image: circleci/openjdk:8-jdk-browsers
     
@@ -12,7 +12,7 @@ jobs:
       - checkout
 
       - restore_cache:
-          key: my-company-mview-{{ checksum "pom.xml" }}
+          key: my-company-materialized-view-{{ checksum "pom.xml" }}
 
       - run: 
           name: Install maven artifact
@@ -31,7 +31,7 @@ jobs:
       - save_cache:
           paths:
             - ~/.m2
-          key: my-company-mview-{{ checksum "pom.xml" }}
+          key: my-company-materialized-view-{{ checksum "pom.xml" }}
       
       - run:
           name: Collecting test results
@@ -54,14 +54,13 @@ jobs:
      
       - store_artifacts:
           path: artifacts/
-          
+
 notify:
   webhooks:
-  # A list of hashes representing hooks. Only the url field is supported.
     - url: https://webhook.atomist.com/atomist/circle
-
+ 
 workflows:
   version: 2
-  my-company-mview-workflow:
+  my-company-materialized-view-workflow:
     jobs:
       - build

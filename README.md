@@ -1,6 +1,6 @@
-# my-company-customer-materialized-view
+# ReadMe 
 
-This project contains a materialized view for Customer aggregate.
+This component is an event-listener and processor. It listens for the Events and processes them in whatever way makes the most sense. In this case it just builds and maintains a materialized view which tracks the state of the aggregate.
 
 ## Development
 
@@ -8,21 +8,23 @@ This project is driven using [Maven][mvn].
 
 [mvn]: https://maven.apache.org/
 
-### Run locally
+### Run/Install locally
+ 
+Make sure that you have this libraries installed in your local maven repository:
 
-You can run the service locally using the following from the command:
+ - [my-company-common](https://github.com/ivans-innovation-lab/my-company-common)
 
-```
-$ ./mvnw spring-boot:run
+```bash
+$ ./mvnw clean install
 ```
 
 ### Run tests
 
-This service comes with some rudimentary tests as a good starting
+This component comes with some rudimentary tests as a good starting
 point for writing your own.  Use the following command to execute the
 tests using Maven:
 
-```
+```bash
 $ ./mvnw test
 ```
 
