@@ -16,3 +16,19 @@ generator:
     - "version": "0.1.0-SNAPSHOT"
     - "description": "my new project"
 
+---
+kind: "operation"
+client: "com.atomist:rug"
+version: "1.0.0-20170816122823"
+editor:
+  name: "AddAtomistAgent"
+  group: "atomist"
+  artifact: "spring-team-handlers"
+  version: "0.11.0"
+  origin:
+    repo: "git@github.com:atomisthq/spring-team-handlers.git"
+    branch: "966373dc945dc690c29bd5c101f833de42c2fded"
+    sha: "966373d"
+  parameters:
+    - "slackTeam": "T03LLQPNQ"
+
