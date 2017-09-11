@@ -8,8 +8,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import com.idugalic.common.blog.event.BlogPostCreatedEvent;
-import com.idugalic.queryside.myaggregate.domain.Customer;
-import com.idugalic.queryside.myaggregate.repository.CustomerRepository;
+import com.idugalic.queryside.customer.domain.Customer;
+import com.idugalic.queryside.customer.repository.CustomerRepository;
 
 /**
  * Event handlers
