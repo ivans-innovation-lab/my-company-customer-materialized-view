@@ -3,7 +3,7 @@ package com.idugalic.queryside.customer.repository;
 import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RestResource;
-import com.idugalic.queryside.myaggregate.domain.Customer;
+import com.idugalic.queryside.customer.domain.Customer;
 
 /**
  * A read only repository interface - save and delete operations will not be exported as a resource
